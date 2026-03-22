@@ -1,0 +1,151 @@
+body{
+    margin: 0%;
+}
+
+#titulodepagina{
+    background-color:#3B3838;
+    color:white;
+    text-align: center;
+    font-size: 12px;
+    font-family:Arial;
+    margin: 0;
+    padding:0.5%;
+}
+
+.cabezera-principal{
+    text-align:left;
+    background-color:white;
+    font-size: 10px;
+    padding: 10px;
+    width: 100%;
+    position:sticky;
+    top: 0;
+    gap: 10px;
+    display: flex;
+}
+
+.vinculocabezera{
+    color:black;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 10px;
+}
+
+#MAS-VENDIDOS{
+    text-align: center;
+    padding: 2%;
+    padding-bottom: 0%;
+    font-family: Helvetica;
+    font-weight: 600;
+}
+
+section{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2%;
+    font-family:"Helvetica Neue",Arial,sans-serif;
+    color: black;
+    gap: 100px;
+}
+
+/* CATALOGO MEJORADO */
+.catalogo{
+    background-color:white;
+    border-radius:40px;
+    width:300px;
+    padding:20px;
+}
+
+/* IMAGENES MAS COMPACTAS */
+.catalogo img{
+    width:300px;
+}
+
+/* TEXTO MAS PROPORCIONAL */
+.catalogo h3{
+    font-size:18px;
+}
+
+.catalogo p{
+    font-size:16px;
+    font-weight:bold;
+}
+
+.banner-principal{
+    width: 100%;
+    height: 100%;
+    height: 120vh;
+    background-image: url("../img/banner-principal.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation: efecto 15s linear infinite;
+}
+
+@keyframes efecto{
+
+    0%{
+        background-image: url("../img/banner-principal.png");
+    }
+
+    45%{
+        background-image: url("../img/banner-principal.png");
+    }
+
+    50%{
+        background-image: url("../img/banner-principal2.png");
+    }
+
+    95%{
+        background-image: url("../img/banner-principal2.png");
+    }
+
+    100%{
+        background-image: url("../img/banner-principal.png");
+    }
+
+}
+
+#envios-pagos-calidad{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    gap: 10%;
+    background-color: #F7F2F2;
+}
+
+footer{
+    width: 100%;
+    font-family:Arial;
+    text-align: center;
+    padding: 10px;
+    background-color: black;
+    color: white;
+}
+
+footer a{
+    color: white;
+    text-decoration: none;
+}
+.info{
+    display: flex;
+    justify-content: center; /* centra los links */
+    gap: 20px; /* espacio entre ellos */
+}
+.footerinfo{
+    text-decoration: none;
+    color: white;
+    margin-top: 1%;
+}
+.metodosdepago{
+    margin-top: 0.2%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}

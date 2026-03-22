@@ -1,0 +1,78 @@
+body{
+    margin: 0%;
+}
+
+#titulodepagina{
+    background-color:#3B3838;
+    color:white;
+    text-align: center;
+    font-size: 12px;
+    font-family:Arial;
+    margin: 0;
+    padding:0.5%;
+}
+
+.cabezera-principal{
+    text-align:left;
+    background-color:white;
+    font-size: 10px;
+    padding: 10px;
+    width: 100%;
+    position:sticky;
+    top: 0;
+    gap: 10px;
+    display: flex;
+}
+
+.vinculocabezera{
+    color:black;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 10px;
+}
+#catalogo_productos{
+    color:white;
+    background-color: #3B3838;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 1%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    gap: 10%;
+}
+
+section{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2%;
+    font-family:"Helvetica Neue",Arial,sans-serif;
+    color: black;
+    gap: 100px;
+}
+
+/* CATALOGO MEJORADO */
+.catalogo{
+    background-color:white;
+    border-radius:40px;
+    width:300px;
+    padding:20px;
+}
+
+/* IMAGENES MAS COMPACTAS */
+.catalogo img{
+    width:200px;
+}
+
+/* TEXTO MAS PROPORCIONAL */
+.catalogo h3{
+    font-size:18px;
+}
+
+.catalogo p{
+    font-size:16px;
+    font-weight:bold;
+}
