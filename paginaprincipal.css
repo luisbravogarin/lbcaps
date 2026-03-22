@@ -78,7 +78,7 @@ section{
     width: 100%;
     height: 100%;
     height: 120vh;
-    background-image: url("../img/banner-principal.png");
+    background-image: url("banner-principal.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -88,23 +88,23 @@ section{
 @keyframes efecto{
 
     0%{
-        background-image: url("../img/banner-principal.png");
+        background-image: url("banner-principal.png");
     }
 
     45%{
-        background-image: url("../img/banner-principal.png");
+        background-image: url("banner-principal.png");
     }
 
     50%{
-        background-image: url("../img/banner-principal2.png");
+        background-image: url("banner-principal2.png");
     }
 
     95%{
-        background-image: url("../img/banner-principal2.png");
+        background-image: url("banner-principal2.png");
     }
 
     100%{
-        background-image: url("../img/banner-principal.png");
+        background-image: url("banner-principal.png");
     }
 
 }
