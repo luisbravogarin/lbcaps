@@ -1,82 +1,48 @@
+/* RESET */
 body{
-    margin: 0%;
+    margin: 0;
+    font-family: Arial, sans-serif;
 }
 
+/* TITULO */
 #titulodepagina{
     background-color:#3B3838;
     color:white;
     text-align: center;
     font-size: 12px;
-    font-family:Arial;
     margin: 0;
-    padding:0.5%;
+    padding:8px;
 }
 
+/* HEADER */
 .cabezera-principal{
-    text-align:left;
-    background-color:white;
-    font-size: 10px;
-    padding: 10px;
-    width: 100%;
-    position:sticky;
-    top: 0;
-    gap: 10px;
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color:white;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo{
+    width: 120px;
 }
 
 .vinculocabezera{
     color:black;
     text-decoration: none;
     font-size: 16px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     padding: 10px;
 }
 
-#MAS-VENDIDOS{
-    text-align: center;
-    padding: 2%;
-    padding-bottom: 0%;
-    font-family: Helvetica;
-    font-weight: 600;
-}
-
-section{
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding: 2%;
-    font-family:"Helvetica Neue",Arial,sans-serif;
-    color: black;
-    gap: 100px;
-}
-
-/* CATALOGO MEJORADO */
-.catalogo{
-    background-color:white;
-    border-radius:40px;
-    width:300px;
-    padding:20px;
-}
-
-/* IMAGENES MAS COMPACTAS */
-.catalogo img{
-    width:300px;
-}
-
-/* TEXTO MAS PROPORCIONAL */
-.catalogo h3{
-    font-size:18px;
-}
-
-.catalogo p{
-    font-size:16px;
-    font-weight:bold;
-}
-
+/* ========================= */
+/* 🔥 TU BANNER ORIGINAL */
+/* ========================= */
 .banner-principal{
     width: 100%;
-    height: 100%;
     height: 120vh;
     background-image: url("banner-principal.png");
     background-size: cover;
@@ -109,43 +75,183 @@ section{
 
 }
 
-#envios-pagos-calidad{
+/* TITULO SECCION */
+#MAS-VENDIDOS{
     text-align: center;
+    padding: 20px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/* PRODUCTOS */
+section{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    padding: 2%;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    gap: 10%;
-    background-color: #F7F2F2;
+    gap: 40px;
+    padding: 20px;
 }
 
+.catalogo{
+    background-color:white;
+    border-radius:20px;
+    width: 300px;
+    padding:20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.catalogo img{
+    width:100%;
+    height:auto;
+    border-radius:10px;
+}
+
+.catalogo h3{
+    font-size:18px;
+}
+
+.catalogo p{
+    font-size:16px;
+    font-weight:bold;
+}
+
+/* BOTON */
+.boton-pago{
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 5px;
+}
+
+/* INFO */
+#envios-pagos-calidad{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 40px;
+    background-color: #F7F2F2;
+    text-align: center;
+}
+
+#envios-pagos-calidad img{
+    width: 60px;
+}
+
+/* FOOTER */
 footer{
     width: 100%;
-    font-family:Arial;
     text-align: center;
-    padding: 10px;
+    padding: 20px;
     background-color: black;
     color: white;
 }
 
-footer a{
-    color: white;
-    text-decoration: none;
+footer img{
+    width: 30px;
+    margin: 5px;
 }
+
 .info{
     display: flex;
-    justify-content: center; /* centra los links */
-    gap: 20px; /* espacio entre ellos */
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
 }
+
 .footerinfo{
     text-decoration: none;
     color: white;
-    margin-top: 1%;
 }
+
 .metodosdepago{
-    margin-top: 0.2%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    width: 200px;
+    margin-top: 10px;
+}
+
+/* ========================= */
+/* 📱 TABLET */
+/* ========================= */
+@media (max-width: 1024px){
+
+    .catalogo{
+        width: 45%;
+    }
+
+    .banner-principal{
+        height: 90vh;
+    }
+}
+
+/* ========================= */
+/* 📱 CELULAR */
+/* ========================= */
+@media (max-width: 768px){
+
+    /* HEADER */
+    .cabezera-principal{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .vinculocabezera{
+        font-size: 14px;
+        padding: 5px;
+    }
+
+    /* BANNER */
+    .banner-principal{
+        height: 70vh;
+    }
+
+    /* PRODUCTOS */
+    section{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .catalogo{
+        width: 90%;
+    }
+
+    /* INFO */
+    #envios-pagos-calidad{
+        flex-direction: column;
+    }
+
+    /* FOOTER */
+    .info{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .metodosdepago{
+        width: 80%;
+    }
+}
+
+/* ========================= */
+/* 📱 CELULARES PEQUEÑOS */
+/* ========================= */
+@media (max-width: 480px){
+
+    #titulodepagina{
+        font-size: 10px;
+    }
+
+    .vinculocabezera{
+        font-size: 12px;
+    }
+
+    .banner-principal{
+        height: 60vh;
+    }
+
+    #MAS-VENDIDOS{
+        font-size: 18px;
+    }
 }
