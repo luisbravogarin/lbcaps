@@ -1,20 +1,14 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>StreetGo Bienvenido</title>
-
 <link rel="stylesheet" href="paginaprincipal.css">
 
-<script 
-src="https://www.paypal.com/sdk/js?client-id=BAAG8yib18rVEi8JITyCfJ07HVV4D4vIqTdiKJN6J5DXokBuW3jfnYP1LR4XmFqKTkUWXiKp3ioRVO7ebo&components=hosted-buttons&disable-funding=venmo&currency=MXN">
-</script>
-
+<!-- SDK de PayPal -->
+<script src="https://www.paypal.com/sdk/js?client-id=BAAG8yib18rVEi8JITyCfJ07HVV4D4vIqTdiKJN6J5DXokBuW3jfnYP1LR4XmFqKTkUWXiKp3ioRVO7ebo&components=hosted-buttons&disable-funding=venmo&currency=MXN"></script>
 </head>
-
 <body>
 
 <!-- HEADER SUPERIOR -->
@@ -24,8 +18,7 @@ src="https://www.paypal.com/sdk/js?client-id=BAAG8yib18rVEi8JITyCfJ07HVV4D4vIqTd
 
 <!-- MENU -->
 <div class="cabezera-principal">
-    <img src="Streetgo.png" alt="Logo StreetGo" class="logo">
-
+    <img src="img/Streetgo.png" alt="Logo StreetGo" class="logo">
     <a class="vinculocabezera" href="#">INICIO</a>
     <a class="vinculocabezera" href="paginacatalogo1.html">PRODUCTOS</a>
     <a class="vinculocabezera" href="#">QUIÉNES SOMOS</a>
@@ -41,33 +34,45 @@ src="https://www.paypal.com/sdk/js?client-id=BAAG8yib18rVEi8JITyCfJ07HVV4D4vIqTd
 <!-- PRODUCTOS -->
 <section>
 
+    <!-- Gorra LA -->
     <article class="catalogo">
         <h3>Gorra New Era LA</h3>
-        <img src="gorra-new-era-LA.png" alt="Gorra LA">
+        <img src="img/gorra-new-era-LA.png" alt="Gorra LA">
         <p>$399</p>
-
-        <form action="https://www.paypal.com/ncp/payment/YTDSTZWN8RF7W" method="post" target="_blank">
-            <input type="submit" value="Comprar ahora" class="boton-pago">
+        <form action="https://www.paypal.com/ncp/payment/YTDSTZWN8RF7W" method="post" target="_blank" class="paypal-form">
+            <input type="submit" value="Comprar ahora" class="pp-button">
+            <img src="https://www.paypalobjects.com/images/Debit_Credit_APM.svg" alt="cards">
+            <section class="pp-text">
+                Con la tecnología de <img src="https://www.paypalobjects.com/paypal-ui/logos/svg/paypal-wordmark-color.svg" alt="paypal" class="pp-logo">
+            </section>
         </form>
     </article>
 
+    <!-- Gorra Yankees -->
     <article class="catalogo">
         <h3>Gorra New Era Yankees</h3>
-        <img src="gorra-new-era-yankees.png" alt="Gorra Yankees">
+        <img src="img/gorra-new-era-yankees.png" alt="Gorra Yankees">
         <p>$499</p>
-
-        <form action="https://www.paypal.com/ncp/payment/HQ5WHV2UERHKS" method="post" target="_blank">
-            <input type="submit" value="Comprar ahora" class="boton-pago">
+        <form action="https://www.paypal.com/ncp/payment/HQ5WHV2UERHKS" method="post" target="_blank" class="paypal-form">
+            <input type="submit" value="Comprar ahora" class="pp-button">
+            <img src="https://www.paypalobjects.com/images/Debit_Credit_APM.svg" alt="cards">
+            <section class="pp-text">
+                Con la tecnología de <img src="https://www.paypalobjects.com/paypal-ui/logos/svg/paypal-wordmark-color.svg" alt="paypal" class="pp-logo">
+            </section>
         </form>
     </article>
 
+    <!-- Gorra Dodgers -->
     <article class="catalogo">
         <h3>Gorra New Era Dodgers</h3>
-        <img src="gorra-new-era-dodgers.png" alt="Gorra Dodgers">
+        <img src="img/gorra-new-era-dodgers.png" alt="Gorra Dodgers">
         <p>$399</p>
-
-        <form action="https://www.paypal.com/ncp/payment/9L7G2Y2LRT7N6" method="post" target="_blank">
-            <input type="submit" value="Comprar ahora" class="boton-pago">
+        <form action="https://www.paypal.com/ncp/payment/9L7G2Y2LRT7N6" method="post" target="_blank" class="paypal-form">
+            <input type="submit" value="Comprar ahora" class="pp-button">
+            <img src="https://www.paypalobjects.com/images/Debit_Credit_APM.svg" alt="cards">
+            <section class="pp-text">
+                Con la tecnología de <img src="https://www.paypalobjects.com/paypal-ui/logos/svg/paypal-wordmark-color.svg" alt="paypal" class="pp-logo">
+            </section>
         </form>
     </article>
 
@@ -75,46 +80,29 @@ src="https://www.paypal.com/sdk/js?client-id=BAAG8yib18rVEi8JITyCfJ07HVV4D4vIqTd
 
 <!-- INFO -->
 <div id="envios-pagos-calidad">
-
     <article>
-        <img src="logoenvio.png" alt="Envíos">
+        <img src="img/logoenvio.png" alt="Envios">
         <h2>ENVIOS</h2>
-        <p>Envíos a toda la República Mexicana</p>
+        <p>Envios a toda parte de la República Mexicana</p>
     </article>
-
     <article>
-        <img src="logopago.png" alt="Pagos">
+        <img src="img/logopago.png" alt="Pagos">
         <h2>PAGOS</h2>
         <p>Pagos seguros con PayPal y MercadoPago</p>
     </article>
-
     <article>
-        <img src="calidadlogo.png" alt="Calidad">
+        <img src="img/calidadlogo.png" alt="Calidad">
         <h2>CALIDAD</h2>
         <p>Productos de la más alta calidad</p>
     </article>
-
 </div>
 
 <!-- FOOTER -->
 <footer>
+    <a href="https://www.facebook.com/beto.bravo.18488169?locale=es_LA" target="_blank"><img src="img/facebooklogo.png" alt="Facebook"></a>
+    <a href="https://www.instagram.com/betobravo024/" target="_blank"><img src="img/instagramlogo.png" alt="Instagram"></a>
+    <a href="https://wa.me/3340071689" target="_blank"><img src="img/whatsapplogo.png" alt="WhatsApp"></a>
 
-    <!-- REDES -->
-    <div>
-        <a href="https://www.facebook.com/beto.bravo.18488169" target="_blank">
-            <img src="facebooklogo.png" alt="Facebook">
-        </a>
-
-        <a href="https://www.instagram.com/betobravo024/" target="_blank">
-            <img src="instagramlogo.png" alt="Instagram">
-        </a>
-
-        <a href="https://wa.me/3340071689" target="_blank">
-            <img src="whatsapplogo.png" alt="WhatsApp">
-        </a>
-    </div>
-
-    <!-- LINKS -->
     <div class="info">
         <a class="footerinfo" href="#">¿Quiénes somos?</a>
         <a class="footerinfo" href="#">Preguntas frecuentes</a>
@@ -122,18 +110,11 @@ src="https://www.paypal.com/sdk/js?client-id=BAAG8yib18rVEi8JITyCfJ07HVV4D4vIqTd
         <a class="footerinfo" href="#">Devoluciones</a>
     </div>
 
-    <!-- CONTACTO -->
     <p>+52 3340071689</p>
     <p>+52 3331508789</p>
-
     <a href="mailto:luisbravogarin@gmail.com">luisbravogarin@gmail.com</a>
-
-    <br>
-
-    <img class="metodosdepago" src="metodosdepago.png" alt="Métodos de pago">
-
+    <img class="metodosdepago" src="img/metodosdepago.png" alt="Métodos de pago">
     <p>Copyright StreetGo - 2026</p>
-
 </footer>
 
 </body>
