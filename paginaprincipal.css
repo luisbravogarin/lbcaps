@@ -193,7 +193,8 @@ footer a{
     }
 
     .banner-principal{
-        height: 90vh;
+        height: 70vh;
+        background-size: contain;
     }
 }
 
@@ -214,9 +215,16 @@ footer a{
     }
 
     /* BANNER */
+    @media (max-width: 768px){
+
     .banner-principal{
-        height: 70vh;
+        height: 60vh;
+        background-size: contain; /*deja que la imagen se vea completa en celulares pero deja espacios */
+        background-position: center;
+        background-repeat: no-repeat;
     }
+
+}
 
     /* PRODUCTOS */
     section{
@@ -258,7 +266,8 @@ footer a{
     }
 
     .banner-principal{
-        height: 60vh;
+        height: 50vh;
+        background-size: contain; /* 🔥 clave */
     }
 
     #MAS-VENDIDOS{
