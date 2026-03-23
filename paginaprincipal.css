@@ -1,50 +1,54 @@
+/* ========================= */
 /* GLOBAL */
-*{
+* {
     box-sizing: border-box;
 }
 
-body{
+body {
+    overflow-x: hidden;
     margin: 0;
     font-family: Arial, sans-serif;
-    overflow-x: hidden;
 }
 
+/* ========================= */
 /* TITULO */
-#titulodepagina{
-    background-color:#3B3838;
-    color:white;
+#titulodepagina {
+    background-color: #3B3838;
+    color: white;
     text-align: center;
     font-size: 12px;
     margin: 0;
-    padding:8px;
+    padding: 8px;
 }
 
+/* ========================= */
 /* HEADER */
-.cabezera-principal{
+.cabezera-principal {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    background-color:white;
+    background-color: white;
     padding: 5px;
     position: sticky;
     top: 0;
     z-index: 1000;
 }
 
-.logo{
+.logo {
     width: 60px;
 }
 
-.vinculocabezera{
-    text-decoration: none;
+.vinculocabezera {
     color: black;
+    text-decoration: none;
     font-size: 16px;
     padding: 10px;
 }
 
+/* ========================= */
 /* BANNER */
-.banner-principal{
+.banner-principal {
     width: 100%;
     height: 100vh;
     background-image: url("banner-principal.png");
@@ -54,97 +58,102 @@ body{
     animation: efecto 15s linear infinite;
 }
 
-@keyframes efecto{
-    0%, 45%, 100%{background-image: url("banner-principal.png");}
-    50%, 95%{background-image: url("banner-principal2.png");}
+@keyframes efecto {
+    0%, 45%, 100% { background-image: url("banner-principal.png"); }
+    50%, 95% { background-image: url("banner-principal2.png"); }
 }
 
+/* ========================= */
 /* TITULO SECCION */
-#MAS-VENDIDOS{
+#MAS-VENDIDOS {
     text-align: center;
     padding: 20px;
     font-size: 22px;
     font-weight: bold;
 }
 
+/* ========================= */
 /* PRODUCTOS */
-section{
+section {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 60px;
+    gap: 60px; /* más separación entre productos */
     padding: 20px;
 }
 
-.catalogo{
-    background-color:white;
-    border-radius:20px;
-    width: 350px;
-    padding:20px;
+.catalogo {
+    background-color: white;
+    border-radius: 20px;
+    width: 350px; /* un poco más ancho */
+    padding: 20px;
     text-align: center;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-.catalogo img{
-    width:100%;
-    border-radius:10px;
+.catalogo img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
 }
 
-.catalogo h3{
-    font-size:18px;
+.catalogo h3 {
+    font-size: 18px;
 }
 
-.catalogo p{
-    font-size:16px;
-    font-weight:bold;
+.catalogo p {
+    font-size: 16px;
+    font-weight: bold;
 }
 
+/* ========================= */
 /* BOTONES PAYPAL */
-.paypal-form{
+.paypal-form {
     display: inline-grid;
     justify-items: center;
     align-content: start;
-    gap: 0.5rem;
+    gap: 0.25rem;
 }
 
-.pp-button{
+.pp-button {
     text-align: center;
     border: none;
-    border-radius: 0.25rem;
-    min-width: 11.625rem;
-    padding: 0 2rem;
-    height: 2.625rem;
+    border-radius: 5px;
+    min-width: 11rem;
+    padding: 6px 12px;
     font-weight: bold;
     background-color: #000;
     color: #fff;
     font-family: "Helvetica Neue", Arial, sans-serif;
-    font-size: 1rem;
+    font-size: 0.85rem; /* letra más pequeña */
     cursor: pointer;
 }
 
-.pp-text{
-    font-size: 0.75rem;
+.pp-text {
+    font-size: 0.65rem; /* frase más pequeña */
     text-align: center;
 }
 
-.pp-logo{
-    height: 0.875rem;
+.pp-logo {
+    height: 0.75rem;
     vertical-align: middle;
 }
 
+/* ========================= */
 /* INFO */
-#envios-pagos-calidad{
+#envios-pagos-calidad {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 40px;
     padding: 20px;
+    gap: 40px;
     background-color: #F7F2F2;
     text-align: center;
 }
 
+/* ========================= */
 /* FOOTER */
-footer{
+footer {
     width: 100%;
     text-align: center;
     padding: 20px;
@@ -152,59 +161,116 @@ footer{
     color: white;
 }
 
-footer img{
+footer img {
     width: 30px;
     margin: 5px;
 }
 
-footer a{
+footer a {
     color: white;
     text-decoration: none;
 }
 
-.info{
+.info {
     display: flex;
     justify-content: center;
     gap: 20px;
     flex-wrap: wrap;
 }
 
-.footerinfo{
-    color:white;
+.footerinfo {
     text-decoration: none;
+    color: white;
 }
 
-.metodosdepago{
+.metodosdepago {
     width: 200px;
     margin-top: 10px;
 }
 
 /* ========================= */
 /* TABLET */
-@media (max-width:1024px){
-    .catalogo{width:48%;}
-    section{gap:50px;}
-    .banner-principal{height:70vh;background-size:contain;}
+@media (max-width: 1024px) {
+    .catalogo {
+        width: 48%; /* más ancho en tablet */
+    }
+    section {
+        gap: 50px; /* más separación en tablet */
+    }
+    .banner-principal {
+        height: 70vh;
+        background-size: contain;
+    }
 }
 
+/* ========================= */
 /* CELULAR */
-@media (max-width:768px){
-    .cabezera-principal{flex-direction:column;align-items:center;}
-    .vinculocabezera{font-size:14px;padding:5px;}
-    section{flex-direction:column;align-items:center;gap:40px;}
-    .catalogo{width:90%;}
-    .banner-principal{height:60vh;background-size:contain;background-position:center;}
-    #envios-pagos-calidad{flex-direction:column;}
-    .info{flex-direction:column;gap:10px;}
-    .metodosdepago{width:80%;}
-    .pp-button{width:85%;font-size:0.85rem;padding:4px;}
+@media (max-width: 768px) {
+    .cabezera-principal {
+        flex-direction: column;
+        align-items: center;
+    }
+    .vinculocabezera {
+        font-size: 14px;
+        padding: 5px;
+    }
+    section {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+    .catalogo {
+        width: 90%;
+    }
+    .banner-principal {
+        height: 60vh;
+        background-size: contain;
+        background-position: center;
+    }
+    #envios-pagos-calidad {
+        flex-direction: column;
+    }
+    .info {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .metodosdepago {
+        width: 80%;
+    }
+
+    /* botones paypal más pequeños en celular */
+    .pp-button {
+        width: 85%;
+        font-size: 0.8rem;
+        padding: 5px;
+    }
+    .pp-text {
+        font-size: 0.6rem;
+    }
 }
 
+/* ========================= */
 /* CELULARES PEQUEÑOS */
-@media (max-width:480px){
-    #titulodepagina{font-size:10px;}
-    .vinculocabezera{font-size:12px;}
-    #MAS-VENDIDOS{font-size:18px;}
-    .banner-principal{height:50vh;background-size:contain;}
-    .pp-button{width:90%;font-size:0.75rem;padding:3px;}
+@media (max-width: 480px) {
+    #titulodepagina {
+        font-size: 10px;
+    }
+    .vinculocabezera {
+        font-size: 12px;
+    }
+    #MAS-VENDIDOS {
+        font-size: 18px;
+    }
+    .banner-principal {
+        height: 50vh;
+        background-size: contain;
+    }
+    .pp-button {
+        width: 90%;
+        font-size: 0.7rem;
+        padding: 4px;
+    }
+    .pp-text {
+        font-size: 0.55rem;
+    }
 }
