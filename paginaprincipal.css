@@ -161,6 +161,11 @@ footer img{
     margin: 5px;
 }
 
+footer a{
+    color: white;
+    text-decoration: none;
+}
+
 .info{
     display: flex;
     justify-content: center;
