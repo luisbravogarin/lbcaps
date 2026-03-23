@@ -26,7 +26,7 @@ body{
     justify-content: space-between;
     flex-wrap: wrap;
     background-color:white;
-    padding: 5px; /* ✅ CORREGIDO */
+    padding: 5px;
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -43,12 +43,10 @@ body{
     padding: 10px;
 }
 
-/* ========================= */
-/* 🔥 TU BANNER ORIGINAL */
-/* ========================= */
+/* BANNER PRINCIPAL */
 .banner-principal{
     width: 100%;
-    height: 100vh; /* ✅ ajustado */
+    height: 100vh;
     background-image: url("banner-principal.png");
     background-size: cover;
     background-position: center;
@@ -57,27 +55,12 @@ body{
 }
 
 @keyframes efecto{
-
-    0%{
+    0%, 45%, 100%{
         background-image: url("banner-principal.png");
     }
-
-    45%{
-        background-image: url("banner-principal.png");
-    }
-
-    50%{
+    50%, 95%{
         background-image: url("banner-principal2.png");
     }
-
-    95%{
-        background-image: url("banner-principal2.png");
-    }
-
-    100%{
-        background-image: url("banner-principal.png");
-    }
-
 }
 
 /* TITULO SECCION */
@@ -93,14 +76,14 @@ section{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 40px;
+    gap: 60px; /* 🔹 más separación */
     padding: 20px;
 }
 
 .catalogo{
     background-color:white;
     border-radius:20px;
-    width: 300px;
+    width: 350px; /* 🔹 un poco más ancho */
     padding:20px;
     text-align: center;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
@@ -121,15 +104,18 @@ section{
     font-weight:bold;
 }
 
-/* BOTON */
-.boton-pago{
+/* BOTONES DE PAYPAL */
+.catalogo form input[type="submit"]{
     background-color: black;
     color: white;
     border: none;
-    padding: 10px;
-    cursor: pointer;
-    width: 100%;
     border-radius: 5px;
+    padding: 5px;
+    width: 80%;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
 }
 
 /* INFO */
@@ -142,6 +128,11 @@ section{
     background-color: #F7F2F2;
     text-align: center;
 }
+
+#envios-pagos-calidad img{
+    width: 60px;
+}
+
 /* FOOTER */
 footer{
     width: 100%;
@@ -180,25 +171,26 @@ footer a{
 
 /* ========================= */
 /* 📱 TABLET */
-/* ========================= */
 @media (max-width: 1024px){
 
     .catalogo{
-        width: 45%;
+        width: 48%; /* 🔹 más ancho en tablet */
     }
 
     .banner-principal{
         height: 70vh;
         background-size: contain;
     }
+
+    section{
+        gap: 50px; /* 🔹 más separación en tablet */
+    }
 }
 
 /* ========================= */
 /* 📱 CELULAR */
-/* ========================= */
 @media (max-width: 768px){
 
-    /* HEADER */
     .cabezera-principal{
         flex-direction: column;
         align-items: center;
@@ -209,34 +201,27 @@ footer a{
         padding: 5px;
     }
 
-    /* BANNER */
-    @media (max-width: 768px){
-
     .banner-principal{
         height: 60vh;
-        background-size: contain; /*deja que la imagen se vea completa en celulares pero deja espacios */
+        background-size: contain;
         background-position: center;
         background-repeat: no-repeat;
     }
 
-}
-
-    /* PRODUCTOS */
     section{
         flex-direction: column;
         align-items: center;
+        gap: 40px; /* 🔹 separación vertical */
     }
 
     .catalogo{
         width: 90%;
     }
 
-    /* INFO */
     #envios-pagos-calidad{
         flex-direction: column;
     }
 
-    /* FOOTER */
     .info{
         flex-direction: column;
         gap: 10px;
@@ -245,11 +230,17 @@ footer a{
     .metodosdepago{
         width: 80%;
     }
+
+    /* BOTONES PAYPAL MÁS PEQUEÑOS EN CELULAR */
+    .catalogo form input[type="submit"]{
+        width: 85%;
+        padding: 4px;
+        font-size: 0.8rem;
+    }
 }
 
 /* ========================= */
 /* 📱 CELULARES PEQUEÑOS */
-/* ========================= */
 @media (max-width: 480px){
 
     #titulodepagina{
@@ -262,10 +253,16 @@ footer a{
 
     .banner-principal{
         height: 50vh;
-        background-size: contain; /* 🔥 clave */
+        background-size: contain;
     }
 
     #MAS-VENDIDOS{
         font-size: 18px;
+    }
+
+    .catalogo form input[type="submit"]{
+        width: 90%;
+        padding: 3px;
+        font-size: 0.75rem;
     }
 }
