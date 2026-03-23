@@ -1,54 +1,49 @@
-/* ========================= */
-/* GLOBAL */
-* {
+/* SOLUCION GLOBAL */
+*{
     box-sizing: border-box;
 }
-
-body {
+body{
     overflow-x: hidden;
     margin: 0;
     font-family: Arial, sans-serif;
 }
 
-/* ========================= */
 /* TITULO */
-#titulodepagina {
-    background-color: #3B3838;
-    color: white;
+#titulodepagina{
+    background-color:#3B3838;
+    color:white;
     text-align: center;
     font-size: 12px;
     margin: 0;
-    padding: 8px;
+    padding:8px;
 }
 
-/* ========================= */
 /* HEADER */
-.cabezera-principal {
+.cabezera-principal{
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
     flex-wrap: wrap;
-    background-color: white;
+    background-color:white;
     padding: 5px;
     position: sticky;
     top: 0;
     z-index: 1000;
 }
 
-.logo {
+.logo{
     width: 60px;
 }
 
-.vinculocabezera {
-    color: black;
+.vinculocabezera{
+    color:black;
     text-decoration: none;
     font-size: 16px;
     padding: 10px;
 }
 
-/* ========================= */
-/* BANNER */
-.banner-principal {
+/* BANNER PRINCIPAL */
+.banner-principal{
     width: 100%;
     height: 100vh;
     background-image: url("banner-principal.png");
@@ -58,90 +53,68 @@ body {
     animation: efecto 15s linear infinite;
 }
 
-@keyframes efecto {
-    0%, 45%, 100% { background-image: url("banner-principal.png"); }
-    50%, 95% { background-image: url("banner-principal2.png"); }
+@keyframes efecto{
+    0%, 45%, 100%{ background-image: url("banner-principal.png"); }
+    50%, 95%{ background-image: url("banner-principal2.png"); }
 }
 
-/* ========================= */
 /* TITULO SECCION */
-#MAS-VENDIDOS {
+#MAS-VENDIDOS{
     text-align: center;
     padding: 20px;
     font-size: 22px;
     font-weight: bold;
 }
 
-/* ========================= */
 /* PRODUCTOS */
-section {
+section{
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    gap: 60px; /* más separación entre productos */
+    flex-wrap: wrap;
+    gap: 60px; /* 🔹 más separación */
     padding: 20px;
 }
 
-.catalogo {
-    background-color: white;
-    border-radius: 20px;
-    width: 350px; /* un poco más ancho */
-    padding: 20px;
+.catalogo{
+    background-color:white;
+    border-radius:20px;
+    width: 350px; /* 🔹 un poco más ancho */
+    padding:20px;
     text-align: center;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
-.catalogo img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
+.catalogo img{
+    width:100%;
+    height:auto;
+    border-radius:10px;
 }
 
-.catalogo h3 {
-    font-size: 18px;
+.catalogo h3{
+    font-size:18px;
 }
 
-.catalogo p {
-    font-size: 16px;
-    font-weight: bold;
+.catalogo p{
+    font-size:16px;
+    font-weight:bold;
 }
 
-/* ========================= */
-/* BOTONES PAYPAL */
-.paypal-form {
-    display: inline-grid;
-    justify-items: center;
-    align-content: start;
-    gap: 0.25rem;
-}
-
-.pp-button {
-    text-align: center;
+/* BOTONES DE PAYPAL */
+.catalogo form input[type="submit"]{
+    background-color: black;
+    color: white;
     border: none;
     border-radius: 5px;
-    min-width: 11rem;
-    padding: 6px 12px;
-    font-weight: bold;
-    background-color: #000;
-    color: #fff;
-    font-family: "Helvetica Neue", Arial, sans-serif;
-    font-size: 0.85rem; /* letra más pequeña */
+    padding: 5px;
+    width: 80%;
     cursor: pointer;
+    font-weight: bold;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
 }
 
-.pp-text {
-    font-size: 0.65rem; /* frase más pequeña */
-    text-align: center;
-}
-
-.pp-logo {
-    height: 0.75rem;
-    vertical-align: middle;
-}
-
-/* ========================= */
 /* INFO */
-#envios-pagos-calidad {
+#envios-pagos-calidad{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -151,9 +124,8 @@ section {
     text-align: center;
 }
 
-/* ========================= */
 /* FOOTER */
-footer {
+footer{
     width: 100%;
     text-align: center;
     padding: 20px;
@@ -161,116 +133,111 @@ footer {
     color: white;
 }
 
-footer img {
+footer img{
     width: 30px;
     margin: 5px;
 }
 
-footer a {
+footer a{
     color: white;
     text-decoration: none;
 }
 
-.info {
+.info{
     display: flex;
     justify-content: center;
     gap: 20px;
     flex-wrap: wrap;
 }
 
-.footerinfo {
+.footerinfo{
     text-decoration: none;
     color: white;
 }
 
-.metodosdepago {
+.metodosdepago{
     width: 200px;
     margin-top: 10px;
 }
 
 /* ========================= */
-/* TABLET */
-@media (max-width: 1024px) {
-    .catalogo {
-        width: 48%; /* más ancho en tablet */
+/* 📱 TABLET */
+@media (max-width: 1024px){
+    .catalogo{
+        width: 48%; /* 🔹 más ancho en tablet */
     }
-    section {
-        gap: 50px; /* más separación en tablet */
-    }
-    .banner-principal {
+    .banner-principal{
         height: 70vh;
         background-size: contain;
     }
+    section{
+        gap: 50px; /* 🔹 más separación en tablet */
+    }
 }
 
 /* ========================= */
-/* CELULAR */
-@media (max-width: 768px) {
-    .cabezera-principal {
+/* 📱 CELULAR */
+@media (max-width: 768px){
+    .cabezera-principal{
         flex-direction: column;
         align-items: center;
     }
-    .vinculocabezera {
+    .vinculocabezera{
         font-size: 14px;
         padding: 5px;
     }
-    section {
-        flex-direction: column;
-        align-items: center;
-        gap: 40px;
-    }
-    .catalogo {
-        width: 90%;
-    }
-    .banner-principal {
+    .banner-principal{
         height: 60vh;
         background-size: contain;
         background-position: center;
+        background-repeat: no-repeat;
     }
-    #envios-pagos-calidad {
+    section{
+        flex-direction: column;
+        align-items: center;
+        gap: 40px; /* 🔹 separación vertical */
+    }
+    .catalogo{
+        width: 90%;
+    }
+    #envios-pagos-calidad{
         flex-direction: column;
     }
-    .info {
+    .info{
         flex-direction: column;
         gap: 10px;
     }
-    .metodosdepago {
+    .metodosdepago{
         width: 80%;
     }
 
-    /* botones paypal más pequeños en celular */
-    .pp-button {
+    /* BOTONES PAYPAL MÁS PEQUEÑOS EN CELULAR */
+    .catalogo form input[type="submit"]{
         width: 85%;
+        padding: 4px;
         font-size: 0.8rem;
-        padding: 5px;
-    }
-    .pp-text {
-        font-size: 0.6rem;
     }
 }
 
 /* ========================= */
-/* CELULARES PEQUEÑOS */
-@media (max-width: 480px) {
-    #titulodepagina {
+/* 📱 CELULARES PEQUEÑOS */
+@media (max-width: 480px){
+    #titulodepagina{
         font-size: 10px;
     }
-    .vinculocabezera {
+    .vinculocabezera{
         font-size: 12px;
     }
-    #MAS-VENDIDOS {
-        font-size: 18px;
-    }
-    .banner-principal {
+    .banner-principal{
         height: 50vh;
         background-size: contain;
     }
-    .pp-button {
-        width: 90%;
-        font-size: 0.7rem;
-        padding: 4px;
+    #MAS-VENDIDOS{
+        font-size: 18px;
     }
-    .pp-text {
-        font-size: 0.55rem;
+    .catalogo form input[type="submit"]{
+        width: 90%;
+        padding: 3px;
+        font-size: 0.75rem;
     }
 }
