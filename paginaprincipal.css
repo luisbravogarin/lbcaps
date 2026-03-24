@@ -52,6 +52,7 @@ body{
     background-position: center;
     background-repeat: no-repeat;
     animation: efecto 15s linear infinite;
+    background-color:#3B3838;
 }
 
 @keyframes efecto{
@@ -176,6 +177,7 @@ footer a{
     .banner-principal{
         height: 70vh;
         background-size: contain;
+        background-color:#3B3838;
     }
 
     section{
@@ -202,6 +204,7 @@ footer a{
         background-size: contain;
         background-position: center;
         background-repeat: no-repeat;
+        background-color:#3B3838;
     }
 
     section{
@@ -250,6 +253,7 @@ footer a{
     .banner-principal{
         height: 50vh;
         background-size: contain;
+        background-color:#3B3838;
     }
 
     #MAS-VENDIDOS{
