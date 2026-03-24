@@ -1,49 +1,54 @@
-/* SOLUCION GLOBAL */
-*{
+/* ========================= */
+/* 🔧 SOLUCION GLOBAL */
+* {
     box-sizing: border-box;
 }
-body{
+
+body {
     overflow-x: hidden;
     margin: 0;
     font-family: Arial, sans-serif;
 }
 
-/* TITULO */
-#titulodepagina{
-    background-color:#3B3838;
-    color:white;
+/* ========================= */
+/* 🏷️ TITULO */
+#titulodepagina {
+    background-color: #3B3838;
+    color: white;
     text-align: center;
     font-size: 12px;
     margin: 0;
-    padding:8px;
+    padding: 8px;
 }
 
-/* HEADER */
-.cabezera-principal{
+/* ========================= */
+/* 🧭 HEADER */
+.cabezera-principal {
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    background-color:white;
+    background-color: white;
     padding: 5px;
     position: sticky;
     top: 0;
     z-index: 1000;
 }
 
-.logo{
+.logo {
     width: 60px;
 }
 
-.vinculocabezera{
-    color:black;
+.vinculocabezera {
+    color: black;
     text-decoration: none;
     font-size: 16px;
     padding: 10px;
 }
 
-/* BANNER PRINCIPAL */
-.banner-principal{
+/* ========================= */
+/* 🖼️ BANNER PRINCIPAL */
+.banner-principal {
     width: 100%;
     height: 100vh;
     background-image: url("banner-principal.png");
@@ -53,54 +58,61 @@ body{
     animation: efecto 15s linear infinite;
 }
 
-@keyframes efecto{
-    0%, 45%, 100%{ background-image: url("banner-principal.png"); }
-    50%, 95%{ background-image: url("banner-principal2.png"); }
+@keyframes efecto {
+    0%, 45%, 100% {
+        background-image: url("banner-principal.png");
+    }
+    50%, 95% {
+        background-image: url("banner-principal2.png");
+    }
 }
 
-/* TITULO SECCION */
-#MAS-VENDIDOS{
+/* ========================= */
+/* 🏷️ TITULO SECCION */
+#MAS-VENDIDOS {
     text-align: center;
     padding: 20px;
     font-size: 22px;
     font-weight: bold;
 }
 
-/* PRODUCTOS */
-section{
+/* ========================= */
+/* 🛍️ PRODUCTOS */
+section {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 60px; /* 🔹 más separación */
+    gap: 60px;
     padding: 20px;
 }
 
-.catalogo{
-    background-color:white;
-    border-radius:20px;
-    width: 350px; /* 🔹 un poco más ancho */
-    padding:20px;
+.catalogo {
+    background-color: white;
+    border-radius: 20px;
+    width: 350px;
+    padding: 20px;
     text-align: center;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
-.catalogo img{
-    width:100%;
-    height:auto;
-    border-radius:10px;
+.catalogo img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
 }
 
-.catalogo h3{
-    font-size:18px;
+.catalogo h3 {
+    font-size: 18px;
 }
 
-.catalogo p{
-    font-size:16px;
-    font-weight:bold;
+.catalogo p {
+    font-size: 16px;
+    font-weight: bold;
 }
 
-/* BOTONES DE PAYPAL */
-.catalogo form input[type="submit"]{
+/* ========================= */
+/* 💳 BOTONES DE PAYPAL */
+.catalogo form input[type="submit"] {
     background-color: black;
     color: white;
     border: none;
@@ -113,8 +125,9 @@ section{
     font-size: 0.9rem;
 }
 
-/* INFO */
-#envios-pagos-calidad{
+/* ========================= */
+/* 🚚 INFO */
+#envios-pagos-calidad {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -124,8 +137,9 @@ section{
     text-align: center;
 }
 
-/* FOOTER */
-footer{
+/* ========================= */
+/* 📌 FOOTER */
+footer {
     width: 100%;
     text-align: center;
     padding: 20px;
@@ -133,86 +147,97 @@ footer{
     color: white;
 }
 
-footer img{
+footer img {
     width: 30px;
     margin: 5px;
 }
 
-footer a{
+footer a {
     color: white;
     text-decoration: none;
 }
 
-.info{
+.info {
     display: flex;
     justify-content: center;
     gap: 20px;
     flex-wrap: wrap;
 }
 
-.footerinfo{
+.footerinfo {
     text-decoration: none;
     color: white;
 }
 
-.metodosdepago{
+.metodosdepago {
     width: 200px;
     margin-top: 10px;
 }
 
 /* ========================= */
 /* 📱 TABLET */
-@media (max-width: 1024px){
-    .catalogo{
-        width: 48%; /* 🔹 más ancho en tablet */
+@media (max-width: 1024px) {
+
+    .catalogo {
+        width: 48%;
     }
-    .banner-principal{
+
+    .banner-principal {
         height: 70vh;
         background-size: contain;
     }
-    section{
-        gap: 50px; /* 🔹 más separación en tablet */
+
+    section {
+        gap: 50px;
     }
 }
 
 /* ========================= */
 /* 📱 CELULAR */
-@media (max-width: 768px){
-    .cabezera-principal{
+@media (max-width: 768px) {
+
+    .cabezera-principal {
         flex-direction: column;
         align-items: center;
     }
-    .vinculocabezera{
+
+    .vinculocabezera {
         font-size: 14px;
         padding: 5px;
     }
-    .banner-principal{
+
+    .banner-principal {
         height: 60vh;
         background-size: contain;
         background-position: center;
         background-repeat: no-repeat;
     }
-    section{
+
+    section {
         flex-direction: column;
         align-items: center;
-        gap: 40px; /* 🔹 separación vertical */
+        gap: 40px;
     }
-    .catalogo{
+
+    .catalogo {
         width: 90%;
     }
-    #envios-pagos-calidad{
+
+    #envios-pagos-calidad {
         flex-direction: column;
     }
-    .info{
+
+    .info {
         flex-direction: column;
         gap: 10px;
     }
-    .metodosdepago{
+
+    .metodosdepago {
         width: 80%;
     }
 
-    /* BOTONES PAYPAL MÁS PEQUEÑOS EN CELULAR */
-    .catalogo form input[type="submit"]{
+    /* BOTONES PAYPAL MÁS PEQUEÑOS */
+    .catalogo form input[type="submit"] {
         width: 85%;
         padding: 4px;
         font-size: 0.8rem;
@@ -221,21 +246,26 @@ footer a{
 
 /* ========================= */
 /* 📱 CELULARES PEQUEÑOS */
-@media (max-width: 480px){
-    #titulodepagina{
+@media (max-width: 480px) {
+
+    #titulodepagina {
         font-size: 10px;
     }
-    .vinculocabezera{
+
+    .vinculocabezera {
         font-size: 12px;
     }
-    .banner-principal{
+
+    .banner-principal {
         height: 50vh;
         background-size: contain;
     }
-    #MAS-VENDIDOS{
+
+    #MAS-VENDIDOS {
         font-size: 18px;
     }
-    .catalogo form input[type="submit"]{
+
+    .catalogo form input[type="submit"] {
         width: 90%;
         padding: 3px;
         font-size: 0.75rem;
