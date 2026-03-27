@@ -26,14 +26,14 @@ body{
     justify-content: space-between;
     flex-wrap: wrap;
     background-color:white;
-    padding: 5px;
+    padding: 2px;
     position: sticky;
     top: 0;
     z-index: 1000;
 }
 
 .logo{
-    width: 60px;
+    width: 50px;
 }
 
 .vinculocabezera{
