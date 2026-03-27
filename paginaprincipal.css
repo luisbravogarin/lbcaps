@@ -46,7 +46,6 @@ body{
 /* BANNER PRINCIPAL */
 .banner-principal{
     width: 100%;
-    height: 100vh;
     background-image: url("banner-principal.png");
     background-size: cover;
     background-position: center;
