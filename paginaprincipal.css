@@ -133,6 +133,7 @@ section{
 }
 .catalogo form input[type="submit"]:hover {
   box-shadow: var(--hover-shadows);
+  background-color: #06303B;
 }
 
 .catalogo form input[type="submit"]:active {
