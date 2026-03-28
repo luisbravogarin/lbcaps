@@ -108,7 +108,7 @@ section{
 
 /* BOTONES DE PAYPAL */
 .catalogo form input[type="submit"]{
-    background-color: black;
+   /* background-color: black;
     color: white;
     border: none;
     border-radius: 5px;
@@ -118,6 +118,21 @@ section{
     font-weight: bold;
     font-family: "Helvetica Neue", Arial, sans-serif;
     font-size: 0.9rem;
+    */
+    --hover-shadows: 16px 16px 33px #121212, -16px -16px 33px #303030;
+  --accent: #06303B;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  border: none;
+  border-radius: 1.1em;
+  background-color:black;
+  cursor: pointer;
+  color: white;
+  padding: 1em 2em;
+  transition: box-shadow ease-in-out 0.3s, background-color ease-in-out 0.1s,
+    letter-spacing ease-in-out 0.1s, transform ease-in-out 0.1s;
+  box-shadow: 13px 13px 10px #1c1c1c, -13px -13px 10px #262626;
+}
 }
 
 /* INFO */
